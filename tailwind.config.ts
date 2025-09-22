@@ -57,6 +57,35 @@ export default {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
+        // Lucky Draw Festival Colors
+        gold: {
+          DEFAULT: "hsl(var(--gold))",
+          light: "hsl(var(--gold-light))",
+          dark: "hsl(var(--gold-dark))",
+        },
+        red: {
+          DEFAULT: "hsl(var(--red))",
+          light: "hsl(var(--red-light))",
+          dark: "hsl(var(--red-dark))",
+        },
+        festival: {
+          orange: "hsl(var(--festival-orange))",
+          pink: "hsl(var(--festival-pink))",
+        },
+      },
+      backgroundImage: {
+        'gradient-festival': 'var(--gradient-festival)',
+        'gradient-gold': 'var(--gradient-gold)',
+        'gradient-red': 'var(--gradient-red)',
+        'gradient-winner': 'var(--gradient-winner)',
+        'gradient-bg': 'var(--gradient-background)',
+      },
+      boxShadow: {
+        'gold': 'var(--shadow-gold)',
+        'red': 'var(--shadow-red)',
+        'festival': 'var(--shadow-festival)',
+        'glow-gold': 'var(--glow-gold)',
+        'glow-red': 'var(--glow-red)',
       },
       borderRadius: {
         lg: "var(--radius)",
@@ -80,10 +109,37 @@ export default {
             height: "0",
           },
         },
+        "pulse-glow": {
+          "0%": { boxShadow: "0 0 5px hsl(var(--gold) / 0.3)" },
+          "100%": { boxShadow: "0 0 20px hsl(var(--gold) / 0.8), 0 0 30px hsl(var(--gold) / 0.4)" },
+        },
+        "bounce-subtle": {
+          "0%, 100%": { transform: "translateY(0px)" },
+          "50%": { transform: "translateY(-5px)" },
+        },
+        "float": {
+          "0%, 100%": { transform: "translateY(0px) rotate(0deg)" },
+          "33%": { transform: "translateY(-10px) rotate(1deg)" },
+          "66%": { transform: "translateY(-5px) rotate(-1deg)" },
+        },
+        "shimmer": {
+          "0%": { backgroundPosition: "-200% 0" },
+          "100%": { backgroundPosition: "200% 0" },
+        },
+        "confetti": {
+          "0%": { transform: "scale(0) rotate(0deg)", opacity: "0" },
+          "50%": { transform: "scale(1.2) rotate(180deg)", opacity: "1" },
+          "100%": { transform: "scale(1) rotate(360deg)", opacity: "1" },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+        "pulse-glow": "pulse-glow 2s ease-in-out infinite alternate",
+        "bounce-subtle": "bounce-subtle 2s ease-in-out infinite",
+        "float": "float 3s ease-in-out infinite",
+        "shimmer": "shimmer 2s linear infinite",
+        "confetti": "confetti 0.8s ease-out",
       },
     },
   },
