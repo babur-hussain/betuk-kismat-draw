@@ -2,61 +2,61 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Lucky Draw Design System - Festive & Engaging Colors */
+/* Lucky Draw Design System - Soft Light Theme */
 
 @layer base {
   :root {
-    --background: 15 25% 5%;
-    --foreground: 45 100% 95%;
+    --background: 50 20% 98%;
+    --foreground: 210 40% 20%;
 
-    --card: 15 20% 8%;
-    --card-foreground: 45 100% 95%;
+    --card: 0 0% 100%;
+    --card-foreground: 210 40% 20%;
 
-    --popover: 15 20% 8%;
-    --popover-foreground: 45 100% 95%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 210 40% 20%;
 
-    --primary: 45 100% 50%;
-    --primary-foreground: 15 25% 5%;
+    --primary: 210 40% 35%;
+    --primary-foreground: 0 0% 98%;
 
-    --secondary: 0 100% 50%;
-    --secondary-foreground: 45 100% 95%;
+    --secondary: 210 40% 95%;
+    --secondary-foreground: 210 40% 20%;
 
-    --muted: 15 15% 15%;
-    --muted-foreground: 45 50% 70%;
+    --muted: 210 40% 96%;
+    --muted-foreground: 215.4 16.3% 46.9%;
 
-    --accent: 30 100% 60%;
-    --accent-foreground: 15 25% 5%;
+    --accent: 210 40% 92%;
+    --accent-foreground: 210 40% 20%;
 
     --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 45 100% 95%;
+    --destructive-foreground: 210 40% 98%;
 
-    --border: 15 25% 20%;
-    --input: 15 25% 15%;
-    --ring: 45 100% 50%;
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 210 40% 35%;
 
-    /* Lucky Draw Special Colors */
-    --gold: 45 100% 50%;
-    --gold-light: 45 100% 70%;
-    --gold-dark: 45 100% 30%;
-    --red: 0 100% 50%;
-    --red-light: 0 100% 70%;
-    --red-dark: 0 100% 30%;
-    --festival-orange: 30 100% 60%;
-    --festival-pink: 320 100% 70%;
+    /* Lucky Draw Soft Colors */
+    --gold: 45 80% 60%;
+    --gold-light: 45 85% 75%;
+    --gold-dark: 45 75% 45%;
+    --red: 0 70% 65%;
+    --red-light: 0 75% 80%;
+    --red-dark: 0 65% 50%;
+    --festival-orange: 30 80% 70%;
+    --festival-pink: 320 60% 80%;
     
-    /* Gradients */
-    --gradient-gold: linear-gradient(135deg, hsl(var(--gold-light)), hsl(var(--gold)), hsl(var(--gold-dark)));
-    --gradient-red: linear-gradient(135deg, hsl(var(--red-light)), hsl(var(--red)), hsl(var(--red-dark)));
-    --gradient-festival: linear-gradient(135deg, hsl(var(--gold)), hsl(var(--festival-orange)), hsl(var(--red)));
-    --gradient-winner: linear-gradient(135deg, hsl(var(--gold)), hsl(var(--festival-pink)));
-    --gradient-background: linear-gradient(135deg, hsl(var(--background)), hsl(15 30% 8%));
+    /* Soft Gradients */
+    --gradient-gold: linear-gradient(135deg, hsl(var(--gold-light)), hsl(var(--gold)));
+    --gradient-red: linear-gradient(135deg, hsl(var(--red-light)), hsl(var(--red)));
+    --gradient-festival: linear-gradient(135deg, hsl(var(--gold-light)), hsl(var(--festival-orange)));
+    --gradient-winner: linear-gradient(135deg, hsl(var(--gold-light)), hsl(var(--festival-pink)));
+    --gradient-background: linear-gradient(135deg, hsl(var(--background)), hsl(210 40% 96%));
     
-    /* Shadows & Effects */
-    --shadow-gold: 0 10px 30px -10px hsl(var(--gold) / 0.4);
-    --shadow-red: 0 10px 30px -10px hsl(var(--red) / 0.4);
-    --shadow-festival: 0 20px 40px -15px hsl(var(--gold) / 0.5);
-    --glow-gold: 0 0 30px hsl(var(--gold) / 0.6);
-    --glow-red: 0 0 30px hsl(var(--red) / 0.6);
+    /* Soft Shadows & Effects */
+    --shadow-gold: 0 4px 20px -5px hsl(var(--gold) / 0.25);
+    --shadow-red: 0 4px 20px -5px hsl(var(--red) / 0.25);
+    --shadow-festival: 0 8px 25px -8px hsl(var(--gold) / 0.2);
+    --glow-gold: 0 0 20px hsl(var(--gold) / 0.3);
+    --glow-red: 0 0 20px hsl(var(--red) / 0.3);
     
     /* Animations */
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
@@ -126,7 +126,7 @@
   }
 
   body {
-    @apply bg-gradient-to-br from-background to-[hsl(15_30%_8%)] text-foreground overflow-x-hidden;
+    @apply bg-gradient-to-br from-background to-[hsl(210_40%_96%)] text-foreground overflow-x-hidden;
   }
 }
 
@@ -211,8 +211,8 @@
 }
 
 @keyframes pulse-glow {
-  0% { box-shadow: 0 0 5px hsl(var(--gold) / 0.3); }
-  100% { box-shadow: 0 0 20px hsl(var(--gold) / 0.8), 0 0 30px hsl(var(--gold) / 0.4); }
+  0% { box-shadow: 0 0 3px hsl(var(--gold) / 0.2); }
+  100% { box-shadow: 0 0 15px hsl(var(--gold) / 0.4), 0 0 25px hsl(var(--gold) / 0.2); }
 }
 
 @keyframes bounce-subtle {

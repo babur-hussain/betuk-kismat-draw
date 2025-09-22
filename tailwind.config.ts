@@ -57,7 +57,7 @@ export default {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
-        // Lucky Draw Festival Colors
+        // Lucky Draw Soft Light Colors  
         gold: {
           DEFAULT: "hsl(var(--gold))",
           light: "hsl(var(--gold-light))",
@@ -110,8 +110,8 @@ export default {
           },
         },
         "pulse-glow": {
-          "0%": { boxShadow: "0 0 5px hsl(var(--gold) / 0.3)" },
-          "100%": { boxShadow: "0 0 20px hsl(var(--gold) / 0.8), 0 0 30px hsl(var(--gold) / 0.4)" },
+          "0%": { boxShadow: "0 0 3px hsl(var(--gold) / 0.2)" },
+          "100%": { boxShadow: "0 0 15px hsl(var(--gold) / 0.4), 0 0 25px hsl(var(--gold) / 0.2)" },
         },
         "bounce-subtle": {
           "0%, 100%": { transform: "translateY(0px)" },
